@@ -1,0 +1,30 @@
+{
+	"name": "filter-shipping-rates",
+	"version": "0.1.0",
+	"author": "The WordPress Contributors",
+	"license": "GPL-3.0+",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"start:hot": "wp-scripts start --hot",
+		"postinstall": "composer install"
+	},
+	"dependencies": {
+		"@woocommerce/woocommerce-rest-api": "^1.0.1",
+		"@wordpress/hooks": "^3.56.0",
+		"@wordpress/i18n": "^4.56.0",
+		"wpapi": "^1.2.2"
+	},
+	"devDependencies": {
+		"@woocommerce/dependency-extraction-webpack-plugin": "^3.0.0",
+		"@woocommerce/eslint-plugin": "^2.2.0",
+		"@wordpress/prettier-config": "^3.13.0",
+		"@wordpress/scripts": "^24.6.0"
+	}
+}
